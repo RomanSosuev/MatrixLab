@@ -18,7 +18,7 @@ while abs(difference) > (0.1 ** accuracy):
     buff += summa
     n += 1
     currDet = det * fact ** inpSize
-    summa = currDet / currFact * (-1) ** n
+    summa += currDet / currFact * (-1) ** n
     currFact = currFact * (3 * n - 3) * (3 * n - 2) * fact
     difference = abs(summa - buff)
     buff = 0
